@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-prettier"
+  ],
+  "rules": {
+    "string-quotes": "single",
+    "color-hex-case": "lower",
+    "max-empty-lines": 1,
+    "declaration-colon-space-after": "always",
+    "declaration-colon-space-before": "never",
+    "declaration-block-trailing-semicolon": "always",
+    "at-rule-no-unknown": null
+  }
+}
