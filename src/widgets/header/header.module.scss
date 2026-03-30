@@ -1,0 +1,119 @@
+.header {
+  background-color: $bg-color;
+  width: 100%;
+  position: relative;
+}
+
+.headerContainer {
+  padding: 40px 36px 24px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: left;
+}
+
+.headerLogo {
+  min-width: 159px;
+}
+
+.headerNavigation {
+  min-width: 222px;
+}
+
+.navigationList {
+  display: flex;
+  gap: 24px;
+}
+
+.navigationSkills {
+  display: flex;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.allSkills {
+  position: absolute;
+  top: calc(100% - 10px);
+  left: 35px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  pointer-events: none;
+}
+
+.allSkills.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+  z-index: 10;
+}
+
+
+
+.navigationLink {
+  text-decoration: none;
+}
+
+.search {
+  width: 100%;
+}
+
+.searchInput {
+  border-color: transparent;
+}
+
+.actionsBar {
+  display: flex;
+  gap: 20px;
+}
+
+.userBar {
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+}
+
+.userData {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.userPhoto {
+  max-width: 48px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.userActionMenu {
+  position: absolute;
+  top: calc(100% - 10px);
+  right: 35px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  pointer-events: none;
+}
+
+.userActionMenu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.imageWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.loginButton {
+  width: fit-content;
+}
