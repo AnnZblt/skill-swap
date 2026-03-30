@@ -1,0 +1,15 @@
+.text {
+  font-family: $font-family-main;
+  font-weight: $font-weight-regular;
+  letter-spacing: $letter-spacing-regular;
+}
+
+.text_s {
+  font-size: $font-size-s;
+  line-height: $line-height-m;
+}
+
+.text_xs {
+  font-size: $font-size-xs;
+  line-height: $line-height-s;
+}

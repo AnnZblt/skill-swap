@@ -1,0 +1,29 @@
+.title {
+  font-family: $font-family-title;
+  font-weight: $font-weight-medium;
+  letter-spacing: $letter-spacing-condensed;
+  color: $font-color-primary;
+}
+
+.title_xl {
+  font-size: $font-size-xl;
+  line-height: $line-height-xl;
+}
+
+.title_l {
+  font-size: $font-size-l;
+  line-height: $line-height-l;
+}
+
+.title_m {
+  font-size: $font-size-m;
+  line-height: $line-height-m;
+}
+
+.title_s {
+  font-family: $font-family-main;
+  font-weight: $font-weight-medium;
+  letter-spacing: $letter-spacing-regular;
+  font-size: $font-size-s;
+  line-height: $line-height-m;
+}

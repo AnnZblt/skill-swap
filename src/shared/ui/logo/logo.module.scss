@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 159px;
+  height: auto;
+  cursor: pointer;
+}
+
+.logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
