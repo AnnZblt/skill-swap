@@ -1,0 +1,16 @@
+.filterPanel {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 40px;
+  background-color: $card-color;
+  border-radius: 12px;
+  max-width: 324px;
+  align-self: start;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
