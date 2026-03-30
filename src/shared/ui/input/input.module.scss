@@ -1,0 +1,56 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  inline-size: 100%;
+}
+
+.label {
+  font-size: $font-size-s;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-m;
+  color: $font-color-primary;
+  font-family: $font-family-main;
+}
+
+.fieldWrapper {
+  position: relative;
+}
+
+.field {
+  border: 1px solid $font-color-secondary;
+  border-radius: 12px;
+  padding: 12px 20px;
+  inline-size: 100%;
+  font-size: $font-size-s;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-m;
+  color: $font-color-secondary;
+  font-family: $font-family-main;
+
+  &:focus {
+    color: $font-color-primary;
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; // чтобы клики проходили на input
+}
+
+.fieldError {
+  border-color: $error-color;
+}
+
+.error {
+  font-size: $font-size-xs;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-s;
+  font-family: $font-family-main;
+  color: $error-color;
+}

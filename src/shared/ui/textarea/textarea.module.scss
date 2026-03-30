@@ -1,0 +1,62 @@
+.textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  inline-size: 100%;
+}
+
+.label {
+  font-family: $font-family-main;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-s;
+  line-height: $line-height-m;
+  letter-spacing: $letter-spacing-regular;
+  color: $font-color-primary;
+}
+
+.fieldWrapper {
+  position: relative;
+}
+
+.field {
+  border: 1px solid $font-color-secondary;
+  border-radius: 12px;
+  padding: 12px 20px;
+  inline-size: 100%;
+  block-size: 90px;
+  font-family: $font-family-main;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-s;
+  line-height: $line-height-m;
+  letter-spacing: $letter-spacing-regular;
+  background-color: $card-color;
+  color: $font-color-secondary;
+  resize: vertical;
+
+  &:focus {
+    color: $font-color-primary;
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.fieldError {
+  border-color: $error-color;
+}
+
+.error {
+  font-family: $font-family-main;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-xs;
+  line-height: $line-height-s;
+  letter-spacing: $letter-spacing-regular;
+  color: $error-color;
+}
