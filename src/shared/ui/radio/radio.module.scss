@@ -1,0 +1,14 @@
+input[type="radio"] {
+  accent-color: $button-primary-pressed-color;
+  width: 20px;
+  height: 20px;
+  margin: 0 0 0 2px;
+}
+
+.inputWrapper {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
