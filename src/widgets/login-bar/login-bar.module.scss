@@ -1,0 +1,22 @@
+.userBar {
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid $font-color-secondary;
+  background-color: $card-color;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.navigationLink {
+  text-decoration: none;
+}
+
+.navigationLogout {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
