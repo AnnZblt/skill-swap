@@ -1,0 +1,136 @@
+.menu {
+  width: 312px;
+}
+
+.profile {
+  width: 1020px;
+  display: flex;
+  background-color: $card-color;
+  border-radius: 24px;
+  padding: 60px;
+}
+
+.form {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 196px;
+}
+
+.imageWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.inputAvatar {
+  display: none;
+}
+
+.labelAvatar {
+  max-height: 244px;
+  border-radius: 50%;
+}
+
+.circle {
+  width: 244px;
+  height: 244px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.iconWrapper {
+  position: absolute;
+  padding: 16px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  right: 0;
+  top: 184px;
+  z-index: 2;
+  background-color: $button-primary-hover-color;
+  transition: background-color .2s ease-in-out;
+  cursor: pointer;
+}
+
+.iconWrapper:hover {
+  background-color: $button-primary-color;
+}
+
+.inputImage::-webkit-file-upload-button {
+  display: none;
+}
+
+.fieldsWrapper {
+  max-width: 460px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.showPasswordBtn {
+  padding: 0;
+  color: $button-primary-pressed-color;
+  margin-bottom: 16px;
+  align-self: flex-start;
+}
+
+.loginData {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.inputPassword {
+  margin-top: 4px;
+}
+
+.row {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  height: 76px;
+  > *:first-child {
+    margin: 0;
+  }
+}
+
+.selectGender {
+  min-width: 206px;
+  width: 50%;
+}
+
+.selectGender,
+.select {
+  height: 78px;
+  font-family: $font-family-main;
+  font-size: $font-size-s;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-m;
+  letter-spacing: $letter-spacing-regular;
+  > *:first-child {
+    margin-bottom: 4px;
+  }
+}
+
+.textareaWrapper {
+  min-height: 148px;
+  margin-top: 16px;
+}
+
+.textarea {
+  height: fit-content;
+}
+
+.buttons {
+  margin-top: 32px;
+}
+
+.buttonSubmit {
+  width: 100%;
+}
