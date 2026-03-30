@@ -1,0 +1,1 @@
+export { UserFavorite } from './UserFavoritePage';

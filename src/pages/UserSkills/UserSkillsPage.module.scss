@@ -1,0 +1,35 @@
+.contentWrapper {
+  padding: 32px 36px;
+  display: flex;
+  gap: 36px;
+}
+
+.menu {
+  width: 312px;
+}
+
+.gallery {
+  width: 1020px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.newCard {
+  width: 324px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $card-color;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+.newCard:hover {
+  background-color: $button-primary-hover-color;
+}
