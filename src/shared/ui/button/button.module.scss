@@ -1,0 +1,61 @@
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	//width: 210px;
+	//height: 50px;
+	text-align: center;
+	border: 1px solid transparent;
+	cursor: pointer;
+  padding: 12px 23px;
+  color: $font-color-primary;
+  border-radius: 12px;
+  gap: 8px;
+}
+
+.button_primary {
+	background-color: $button-primary-color;
+  border-color: $button-primary-color;
+
+  &:hover {
+  background-color: $button-primary-hover-color;
+  border-color: $button-primary-hover-color;
+  }
+
+  &:active {
+	background-color: $button-primary-pressed-color;
+  border-color: $button-primary-pressed-color;
+  color: $font-color-pressed;
+  }
+
+  &:disabled {
+    background-color: $button-primary-disabled-color;
+    border-color: $button-primary-disabled-color;
+    color: $font-color-disabled;
+  }
+}
+
+.button_secondary {
+	background-color: $button-secondary-color;
+  border-color: $accent-color;
+  &:hover {
+    border-color: $button-primary-hover-color;
+  }
+  &:active {
+    border-color: $button-primary-pressed-color;
+  }
+  &:disabled {
+    border-color: $button-primary-disabled-color;
+  }
+}
+
+.button_tertiary {
+  background-color: $button-secondary-color;
+  border-color: $button-secondary-color;
+}
+
+.iconWrapper {
+  font-size: 0;
+  line-height: 0;
+}
