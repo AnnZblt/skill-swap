@@ -1,0 +1,79 @@
+.catalogWrapper {
+  column-count: 2;
+  column-gap: 40px;
+  padding: 59px;
+  border-radius: 12px;
+  border: 1px solid $font-color-secondary;
+  background-color: $card-color;
+  max-width: 1136px;
+}
+
+.categoryWrapper {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 40px;
+  break-inside: avoid;
+}
+
+.categoryItem {
+  display: flex;
+  gap: 12px;
+}
+
+.categoryWrapper:nth-child(3n) {
+  margin-bottom: 0;
+}
+
+.categoryIcon {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: $tag-plus-color;
+
+  &[data-category='business']{
+    background-color: $tag-business-color;
+  }
+
+  &[data-category='art']{
+    background-color: $tag-creation-color;
+  }
+
+  &[data-category='languages']{
+    background-color: $tag-languages-color;
+  }
+
+  &[data-category='education']{
+    background-color: $tag-education-color;
+  }
+
+  &[data-category='home']{
+    background-color: $tag-house-color;
+  }
+
+  &[data-category='lifestyle']{
+    background-color: $tag-health-color;
+  }
+}
+
+.subcategoriesList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title {
+  line-height: 28px;
+}
+
+.subcategoryItem {
+  line-height: 1.5;
+}
+
+.subcategoryItem a {
+  text-decoration: none;
+}
