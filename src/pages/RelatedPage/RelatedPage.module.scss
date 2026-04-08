@@ -1,0 +1,13 @@
+.contentWrapper {
+  display: grid;
+  grid-template-columns: 324px 1fr;
+  padding: 32px 36px;
+  gap: 24px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 1020px;
+}
