@@ -1,4 +1,5 @@
 import { useSelector } from '@/app/store/store';
+import { useNavigate } from 'react-router-dom';
 import {
   getPopularCards,
   getNewCards,
@@ -22,14 +23,12 @@ export type TMainPageProps = {
 export const MainPage = ({ pageVariant }: TMainPageProps) => {
   const newSkills = useSelector(getNewCards);
   const popularSkills = useSelector(getPopularCards);
+  // передать аргументом номер категории, которую хотим показывать
   const categoryCards = useSelector(getCardsByCategory(1));
+  const navigate = useNavigate();
 
   const handleFilter = () => {
     console.log('Фильтруем сначала новые');
-  };
-
-  const handleGoToAll = () => {
-    console.log('Смотрим все');
   };
 
   const handleDeleteFilter = () => {
@@ -48,7 +47,7 @@ export const MainPage = ({ pageVariant }: TMainPageProps) => {
               maxCardsCount={3}
               hasAction
               buttonText='Смотреть все'
-              onClick={handleGoToAll}
+              onClick={() => navigate(`/related/popular`)}
               icon={<ArrowRight />}
               iconPosition='right'
             />
@@ -58,7 +57,7 @@ export const MainPage = ({ pageVariant }: TMainPageProps) => {
               maxCardsCount={3}
               hasAction
               buttonText='Смотреть все'
-              onClick={handleGoToAll}
+              onClick={() => navigate(`/related/new`)}
               icon={<ArrowRight />}
               iconPosition='right'
             />
@@ -124,6 +123,7 @@ export const MainPage = ({ pageVariant }: TMainPageProps) => {
               buttonText='Сначала новые'
               onClick={handleFilter}
               icon={<Sort />}
+              iconPosition='left'
             />
           </>
         )}

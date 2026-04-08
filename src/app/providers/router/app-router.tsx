@@ -6,6 +6,7 @@ import { Login } from '@/pages/Login';
 import { MainPage } from '@/pages/MainPage';
 import { PageNotFound } from '@/pages/Page404';
 import { PageError500 } from '@/pages/Page500';
+import { RelatedPage } from '@/pages/RelatedPage';
 import { Registration } from '@/pages/Registration';
 import { SkillPage } from '@/pages/SkillPage';
 import { SubcategoryPage } from '@/pages/SubcategoryPage';
@@ -29,7 +30,8 @@ export const AppRouter = () => {
           <Route path=':subcategoryId' element={<SubcategoryPage />} />
           <Route path='skills/:id' element={<SkillPage />} />
           <Route path='error500' element={<PageError500 />} />
-          <Route path='test' element={<TestPage />} />
+          {/*<Route path='test' element={<TestPage />} /> */}
+          <Route path='related/:pathName' element={<RelatedPage />} />
           <Route path='*' element={<PageNotFound />} />
           <Route
             path='login'
